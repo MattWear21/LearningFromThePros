@@ -25,6 +25,8 @@ from sklearn.metrics import silhouette_score
 from sklearn.manifold import LocallyLinearEmbedding
 from sklearn.manifold import TSNE
 from sklearn.decomposition import PCA
+from mplsoccer import VerticalPitch
+from matplotlib.lines import Line2D
 
 mpii_edges = [[0, 1], [1, 2], [2, 6], [6, 3], [3, 4], [4, 5], 
               [10, 11], [11, 12], [12, 8], [8, 13], [13, 14], [14, 15], 
@@ -67,51 +69,7 @@ def plot2D(ax, pose_3d, mpii_edges):
 
     ax.set_xlabel('x')
     ax.set_ylabel('y')
-    
-def plot2D3DPose(array_id, save_df, poses_2d, poses_3d, img_path, mpii_edges):
-    img_file = save_df['file'][array_id]
-    image = importImage(img_path + img_file)
-    pose_2d = pose_to_matrix(poses_2d[array_id])
-    pose_3d = pose_to_matrix(poses_3d[array_id][:-1])
-    print('Array ID: ' + str(array_id))
-    print("File Name: " + img_file)
-
-    fig = plt.figure(figsize=(15, 5))
-    #fig.patch.set_visible(False)
-    ax = fig.add_subplot(1, 4, 1)
-    ax.imshow(image)
-    ax.set_yticks([])
-    ax.set_xticks([])
-    ax.axis('off')
-    ax.set_title('(a) Input Image', y=-0.14)
-
-    ax = fig.add_subplot(1, 4, 2)
-    ax.imshow(image)
-    for e in range(len(mpii_edges)):
-        ax.plot(pose_2d[mpii_edges[e]][:, 0], pose_2d[mpii_edges[e]][:, 1], c='b', lw=3, marker='o')
-    ax.set_yticks([])
-    ax.set_xticks([])
-    ax.axis('off')
-    ax.set_title('(b) 2D Pose Estimation', y=-0.14)
-
-    ax = fig.add_subplot(1, 4, 3, projection='3d')
-    plot3D(ax, pose_3d, mpii_edges, marker_size=30)
-    ax.set_title('(c) 3D Pose Estimation (CVI)', y=-0.23)
-    ax.set_yticks([])
-    ax.set_xticks([])
-    ax.set_zticks([])
-    
-    ax = fig.add_subplot(1, 4, 4)
-    plot2D(ax, pose_3d, mpii_edges)
-    ax.set_title('(d) 3D Pose Estimation (CVI) 2D Projection', y=-0.2)
-    ax.set_yticks([])
-    ax.set_xticks([])
-    ax.set_xlabel('')
-    ax.set_ylabel('')
-    
-    plt.tight_layout()
-    #plt.savefig('viz/poseEstimationExample.png', dpi=500)
-    plt.show()
+   
         
 def pose_to_matrix(pose):
     if len(pose) == 48:
@@ -225,74 +183,6 @@ def getPhotoID(df):
     df['photo_id'] = photo_id
     return df
 
-def silhouetteInertia(poses):
-    #Silhouette scores and inertia to find optimal number of clusters, k
-    silhouette = []
-    inertia = []
-    for k in range(2, 11):
-        kmeans = KMeans(n_clusters=k)
-        clusters = kmeans.fit_predict(poses)
-        silhouette.append(silhouette_score(poses, clusters))
-        inertia.append(kmeans.inertia_)
-    return (silhouette, inertia)
-
-def plotSilIner(sil, iner, save, k_min=2, k_max=10):
-    fig,ax = plt.subplots(nrows=1, ncols=2, figsize=(10,4))
-    ax[0].plot(range(k_min,k_max+1), sil)
-    ax[0].set_xlabel('Number of Clusters, k')
-    ax[0].set_ylabel('Silhouette Score')
-    ax[1].plot(range(k_min,k_max+1), iner)
-    ax[1].set_xlabel('Number of Clusters, k')
-    ax[1].set_ylabel('Inertia')
-    plt.tight_layout()
-    plt.savefig('viz/' + save + '.png', dpi=500)
-    plt.show()
-
-def getKMeans(poses, k):
-    kmeans = KMeans(n_clusters=k)
-    clusters_kmeans = kmeans.fit_predict(poses)
-    return kmeans, clusters_kmeans
-
-def getGMM(poses, k):
-    gmm = GaussianMixture(n_components=k, n_init=10)
-    clusters_gmm = gmm.fit_predict(poses)
-    return clusters_gmm
-
-def getHier(poses, k):
-    return AgglomerativeClustering(n_clusters = k, affinity='euclidean', linkage='ward').fit_predict(poses)
-
-def plotManifold(pose_arr, kmeans_labels, gmm_labels, hier_labels, k, save):
-    tsne_raw = TSNE(n_components=2).fit_transform(pose_arr)
-    pca_raw = PCA(n_components=2).fit_transform(pose_arr)
-    lle_raw = LocallyLinearEmbedding(n_components=2, n_neighbors=5).fit_transform(pose_arr)
-    colors_kmeans = cm.nipy_spectral(kmeans_labels.astype(float) / k)
-    colors_gmm = cm.rainbow(gmm_labels.astype(float) / k)
-    colors_hier = cm.coolwarm(hier_labels.astype(float) / k)
-    rows = ['t-SNE', 'PCA', 'LLE']
-    
-    fig, axes = plt.subplots(nrows=3, ncols=3, figsize=(15, 15))
-    axes[0, 0].scatter(tsne_raw[:,0], tsne_raw[:,1], c=colors_kmeans)
-    axes[0, 0].set_title('K-Means', size=16)
-    axes[1, 0].scatter(pca_raw[:,0], pca_raw[:,1], c=colors_kmeans)
-    axes[2, 0].scatter(lle_raw[:,0], lle_raw[:,1], c=colors_kmeans)
-    
-    axes[0, 1].scatter(tsne_raw[:,0], tsne_raw[:,1], c=colors_gmm)
-    axes[0, 1].set_title('Gaussian Mixture Model', size=16)
-    axes[1, 1].scatter(pca_raw[:,0], pca_raw[:,1], c=colors_gmm)
-    axes[2, 1].scatter(lle_raw[:,0], lle_raw[:,1], c=colors_gmm)
-    
-    axes[0, 2].scatter(tsne_raw[:,0], tsne_raw[:,1], c=colors_hier)
-    axes[0, 2].set_title('Hierarchical Clustering', size=16)
-    axes[1, 2].scatter(pca_raw[:,0], pca_raw[:,1], c=colors_hier)
-    axes[2, 2].scatter(lle_raw[:,0], lle_raw[:,1], c=colors_hier)
-    
-    for ax, row in zip(axes[:,0], rows):
-        ax.annotate(row, xy=(0, 0.5), xytext=(-ax.yaxis.labelpad - 4, 0),
-                    xycoords=ax.yaxis.label, textcoords='offset points',
-                    size=16, ha='right', va='center')
-    
-    plt.savefig('viz/' + save + '.png', dpi=500)
-    plt.show()
 
 def clusterExamples(k, n_examples, path, model_clusters, pose_df, pose_arr, mpii_edges, save):
     ax_array = np.linspace(1, k * 2 * n_examples - (k * 2 - 1), n_examples).astype(int)
@@ -326,73 +216,33 @@ def ImageID(df, array_id):
     #Get photo id's of poses
     return df.loc[array_id, 'file']
 
-def bodyAngle(pose_3d):
-    midpoint = (pose_3d[0][:2] + pose_3d[5][:2])/2
-    midpoint[1] *= -1
-    torso = pose_3d[7][:2] * np.array([1, -1])
-    body_angle_vec = torso-midpoint
-    return math.atan2(body_angle_vec[0], body_angle_vec[1])*180/math.pi
-
-def handHeight(pose_3d):
-    hand_height = np.abs(np.min(-pose_3d[:, 1]) - np.min(-pose_3d[[10, 15]][:, 1]))
-    return hand_height
+def torsoAngle(pose_3d):
+    #Torso Angle
+    torso_angle = math.atan2(pose_3d[7][0], -pose_3d[7][1])*180/math.pi
+    return np.abs(torso_angle)
 
 def bodyHeight(pose_3d):
     #Body Height
     height = np.abs(np.max(-pose_3d[:, 1]) - np.min(-pose_3d[:, 1]))
     return height
 
-def handWidth(pose_3d):
-    return np.linalg.norm(pose_3d[10] - pose_3d[15])
+def forwardStep(pose_3d):
+    #Distance of forward step
+    forward_step = np.abs(pose_3d[0][2] - pose_3d[5][2])
+    return forward_step
 
-def hipHeight(pose_3d):
-    return np.abs(-np.min(-pose_3d[:, 1]))
+def handHeight(pose_3d):
+    hand_height = np.abs(np.min(-pose_3d[:, 1]) - np.min(-pose_3d[[10, 15]][:, 1]))
+    return hand_height
 
-def minLowerLegDist(pose_3d):
-    return np.min([np.linalg.norm(pose_3d[1][:2] - pose_3d[0][:2]), np.linalg.norm(pose_3d[4][:2] - pose_3d[5][:2])])
+def bodyAngle(pose_3d):
+    midpoint = (pose_3d[0][:2] + pose_3d[5][:2])/2
+    midpoint[1] *= -1
+    torso = pose_3d[7][:2] * np.array([1, -1])
+    body_angle_vec = torso-midpoint
+    return np.abs(math.atan2(body_angle_vec[0], body_angle_vec[1])*180/math.pi)
 
-def feetWidth(pose_3d):
-    return np.linalg.norm(pose_3d[0] - pose_3d[5])
-
-def minArmAngle(pose_3d):
-    left_arm = pose_3d[15] - pose_3d[8]
-    right_arm = pose_3d[10] - pose_3d[8]
-    left_angle = math.atan2(np.abs(left_arm[1]), np.abs(left_arm[0]))*180/math.pi
-    right_angle = math.atan2(np.abs(right_arm[1]), np.abs(right_arm[0]))*180/math.pi
-    return np.min([left_angle, right_angle])
-
-def minLowerLegAngle(pose_3d):
-    left_arm = pose_3d[5] - pose_3d[4]
-    right_arm = pose_3d[1] - pose_3d[0]
-    left_angle = math.atan2(np.abs(left_arm[1]), np.abs(left_arm[0]))*180/math.pi
-    right_angle = math.atan2(np.abs(right_arm[1]), np.abs(right_arm[0]))*180/math.pi
-    return np.min([left_angle, right_angle])
-
-def PosesFeatureSpace(clean_poses):
-    #Input: clean_poses - dataset off all of the camera-invariant poses
-    #Returns: dataset of poses in feature space
-    pose_features = np.zeros((len(clean_poses), 9))
-    for i in range(len(clean_poses)):
-        pose_3d = pose_to_matrix(clean_poses[i])
-        feature_array = np.array([bodyHeight(pose_3d), handHeight(pose_3d),
-                                  bodyAngle(pose_3d), handWidth(pose_3d),
-                                  hipHeight(pose_3d), minLowerLegDist(pose_3d),
-                                  feetWidth(pose_3d), minArmAngle(pose_3d),
-                                  minLowerLegAngle(pose_3d)])
-        pose_features[i] = feature_array
-    return pose_features
-
-def importSBjson(file_name, path='data/events/'):
-    with open(path+file_name) as data_file:
-        #print (mypath+'events/'+file)
-        data = json.load(data_file)
-    
-    #get the nested structure into a dataframe 
-    #store the dataframe in a dictionary with the match id as key (remove '.json' from string)
-    df = pd.json_normalize(data, sep = "_").assign(match_id = file_name[:-5])
-    return df
-
-def removePoorPredictions(set_3d_cvi_df):
+def cleanPredictions(set_3d_cvi_df):
     #List of the array_ids in which to remove because they are bad prediction of true pose
     to_remove_sets = np.array([1,6,7,11,14,25,27,28,31,32,37,40,42,43,44,51,52,53,55,58,
                                63,65,72,81,83,85,87,94,96,108,109,110,113,114,116,117,119,
@@ -405,32 +255,197 @@ def removePoorPredictions(set_3d_cvi_df):
                                372,374,379,387,388,389,390,395,397,401,406,411,413,414,418,
                                419,423,433,436,439,443,446,451,452,453,456,462,465,470,472,
                                474,475,480,489,490,494,502,507,509,515,517,522,528,532,533,
-                               537,553,555,558,566,567,570,572,575,579,580,585,])
+                               537,553,555,558,566,567,570,572,575,579,580,585])
     #Remove selected poses
     set_3d_cvi_clean_df = set_3d_cvi_df.drop(to_remove_sets).reset_index(drop=True)
     keep_cols = np.array(list(range(48)) + ['gk_engage'])
     sets_3d_cvi_clean = set_3d_cvi_clean_df.loc[:,keep_cols].values
-    return sets_3d_cvi_clean
+    return sets_3d_cvi_clean, set_3d_cvi_clean_df
 
+def saveClusters(clusters, file_name, path='data/'):
+    pd.DataFrame(clusters, columns=['cluster']).to_csv(path + file_name, index=False)
 
+def getTrainTest(df, test_size=0.3):
+    on_target = (df['shot_outcome_name'] == 'Goal') | (df['shot_outcome_name'] == 'Saved')
+    features = ['photo_id','gk_name','shot_outcome_name','cluster','shot_angle','distance_to_goal',
+                'under_pressure']
+    ml_df = df.loc[on_target, features].copy()
+    ml_df['shot_outcome_name'].replace({'Goal': 0, 'Saved': 1}, inplace=True)
+    ml_df = pd.get_dummies(ml_df, columns=['cluster'])
+    ml_df = ml_df.reset_index(drop=True)
+    test_ind = np.random.choice(range(ml_df.shape[0]), int(ml_df.shape[0] * test_size))
+    print(test_ind)
+    test_df = ml_df.loc[test_ind, :].copy()
+    train_df = ml_df.drop(test_ind).reset_index(drop=True)
+    return train_df, test_df
 
+def getxSInput(df, scaler, angle, dist, up=0, cluster=0, assist_type='Pass'):
+    k = len(df.filter(regex='cluster').columns)
+    angle_dist = scaler.transform([[angle,dist]])[0]
+    up = np.array([up])
+    clust = np.zeros(k)
+    clust[cluster] = 1
+    if assist_type == 'Cross':
+        ass_t = np.array([1, 0, 0])
+    elif assist_type == 'Other':
+        ass_t = np.array([0, 1, 0])
+    else:
+        ass_t = np.array([0, 0, 1])
+    return np.array([np.concatenate((angle_dist,up,clust))])
 
+def getXSMap(train_df, model, scaler, num_clusters, up=0, ass='Pass'):
+    #Sets: Probability Map
+    x_range = np.linspace(90, 120.01, 50)
+    y_range = np.linspace(0, 80, 50)
+    xs_map = np.zeros((num_clusters, len(x_range), len(y_range)))
+    for cluster in range(num_clusters):
+        for x in range(len(x_range)):
+            for y in range(len(y_range)):
+                d = distance_to_goal(shooter_x=x_range[x], shooter_y=y_range[y])
+                a = goal_angle(shooter_x=x_range[x], shooter_y=y_range[y])
+                xs = []
+                for n in range(num_clusters):
+                    inp = getxSInput(train_df,scaler,angle=a,dist=d,up=up,cluster=n)
+                    xs.append(model.predict_proba(inp)[0][1])
+                mean_xs = np.mean(xs)
+                inp = getxSInput(train_df,scaler,angle=a,dist=d,up=up,cluster=cluster)
+                xs_map[cluster][x, y] = model.predict_proba(inp)[0][1] - mean_xs
+        print("done cluster", cluster)
+    return xs_map
 
+def plotXSMap(xs_map, num_clusters, cluster_names):
+    pitch = VerticalPitch(half=True, goal_type='box', pad_bottom=-30, 
+                          pad_left=-10, pad_right=-10, line_color='black')
+    fig, ax = pitch.draw(figsize=(10, 5), nrows=1, ncols=num_clusters, tight_layout=True)
+    for i in range(num_clusters):
+        im = ax[i].imshow(xs_map[i], cmap=plt.cm.Greens, interpolation='none', 
+                       vmin=xs_map.min(), vmax=xs_map.max(), extent=[0,80,120,90])
+        ax[i].set_title('Cluster ' + str(i) + ': ' + cluster_names[i])
+    cax = plt.axes([1, 0.3, 0.05, 0.4])
+    plt.colorbar(im, cax=cax)
 
+def plotBestTechniqueUp(xs_map, xs_map_up, cluster_name):
+    #Best technique to use
+    pitch = VerticalPitch(half=True, goal_type='box', pad_bottom=-37, 
+                          pad_left=-15, pad_right=-15, line_color='black',
+                          orientation='horizontal')
+    fig, ax = pitch.draw(figsize=(10,5), nrows=1, ncols=2)
+    cmap = plt.cm.tab20
+    im = ax[0].imshow(np.argmax(xs_map, axis=0), cmap=cmap,
+                      interpolation='none', extent=[0,80,120,90])
+    im = ax[1].imshow(np.argmax(xs_map_up, axis=0), cmap=cmap,
+                      interpolation='none', extent=[0,80,120,90])
+    ax[0].set_title('Striker Not Under Pressure')
+    ax[1].set_title('Striker Under Pressure')
+    custom_lines = [Line2D([0], [0], color=cmap(0.), lw=4),
+                    Line2D([0], [0], color=cmap(0.33), lw=4),
+                    Line2D([0], [0], color=cmap(0.66), lw=4),
+                    Line2D([0], [0], color=cmap(1.), lw=4)]
+    ax[1].legend(custom_lines, cluster_name, 
+              loc=1, bbox_to_anchor=(1, 0.38))
+    plt.tight_layout()
 
+def plotDoubleXSMap(xs_map, xs_map_up, cluster_names, num_clusters=4):
+    pitch = VerticalPitch(half=True, goal_type='box', pad_bottom=-30, 
+                          pad_left=-10, pad_right=-10, line_color='black')
+    fig, ax = pitch.draw(figsize=(10, 5), nrows=2, ncols=num_clusters, tight_layout=True)
+    min_v = np.min([xs_map.min(),xs_map_up.min()])
+    max_v = np.max([xs_map.max(),xs_map_up.max()])
+    for i in range(num_clusters):
+        im = ax[0, i].imshow(xs_map[i], cmap=plt.cm.Greens, interpolation='none', 
+                       vmin=min_v, vmax=max_v, extent=[0,80,120,90])
+        ax[0, i].set_title('Cluster ' + str(i) + ': ' + cluster_names[i])
+        if i == 0:
+            ax[0,i].set_ylabel('No Pressure', rotation=0, labelpad=33)
+    for i in range(num_clusters):
+        im = ax[1, i].imshow(xs_map_up[i], cmap=plt.cm.Greens, interpolation='none', 
+                       vmin=min_v, vmax=max_v, extent=[0,80,120,90])
+        #ax[1, i].set_title('Cluster ' + str(i) + ': ' + cluster_names[i])
+        if i == 0:
+            ax[1,i].set_ylabel('Pressure', rotation=0, labelpad=33)
+    cax = plt.axes([1, 0.3, 0.05, 0.4])
+    cax.set_title('xSAA')
+    plt.colorbar(im, cax=cax)
+    plt.tight_layout()
 
+def getGKEM(amateur_1v1s):
+    dist_to_goal = []
+    striker_to_gk = []
+    goal_angle = []
+    for i in range(len(amateur_1v1s)):
+        dist_to_goal.append(distance_to_goal(amateur_1v1s['striker_x'][i], amateur_1v1s['striker_y'][i]))
+        striker_to_gk.append(distance_to_goal(amateur_1v1s['striker_x'][i], amateur_1v1s['striker_y'][i], amateur_1v1s['gk_x'][i], amateur_1v1s['gk_y'][i]))
+        goal_angle.append(goal_angle(amateur_1v1s['striker_x'][i], amateur_1v1s['striker_y'][i]))
+    amateur_1v1s['gkem'] = np.array(striker_to_gk) / np.array(dist_to_goal)
+    amateur_1v1s['distance_to_goal'] = dist_to_goal
+    amateur_1v1s['goal_angle'] = goal_angle
+    return amateur_1v1s
 
+def getOptimalSaveTechnique(amateur_1v1s, amateur_model_df, svm, scaler, num_clusters=4):
+    optimal_cluster = []
+    mean_xs = []
+    for i in range(len(amateur_1v1s)):
+        angle = amateur_1v1s.loc[i, 'goal_angle']
+        dist = amateur_1v1s.loc[i, 'distance_to_goal']
+        up = amateur_1v1s.loc[i, 'under_pressure']
+        xs_list = []
+        for cluster in range(num_clusters):
+            inp = getxSInput(amateur_model_df, scaler, angle=angle, dist=dist, up=up, cluster=cluster)
+            xs_list.append(svm.predict_proba(inp)[0][1])
+        optimal_cluster.append(np.argmax(xs_list))
+        mean_xs.append(np.mean(xs_list))
+    return optimal_cluster, mean_xs
 
+def cleanPenDataFrames(pose_3d_df, pose_3d_2_df):
+    #pose_3d_3_df: 17 - 19 data
+    #pose_3d_df: 19 - 21 data
+    #Change shots that hit post to 'Off T'
+    pose_3d_2_df.loc[pose_3d_2_df.shot_outcome_name == 'Post', 'shot_outcome_name'] = 'Off T'
+    pose_3d_2_df.drop(columns=['match_id','minute','team_id','team_name','player_id','shot_body_part_name',
+                     'shot_technique_name','date','home_team','away_team','season',
+                     'competition','gk_id'], inplace=True)
+    pose_3d_df.loc[pose_3d_df.off_target == 1, 'outcome'] = 'Off T'
+    pose_3d_df.loc[pose_3d_df.outcome == 'Scored', 'outcome'] = 'Goal'
+    pose_3d_df.loc[pose_3d_df.outcome == 'Missed', 'outcome'] = 'Saved'
+    pose_3d_df.drop(columns=['url','off_target'], inplace=True)
+    reorder = ['pen_taker','outcome','goalkeepers'] + list(map(str, list(range(int(pose_3d_df.columns[-1]) + 1))))
+    pose_3d_df = pose_3d_df[reorder]
+    pose_3d_2_df.rename(columns={"player_name": "pen_taker", 
+                                 "shot_outcome_name": "outcome",
+                                 "gk_name": "goalkeepers"}, inplace=True)
+    joined_pose_3d_df = pose_3d_2_df.append(pose_3d_df, ignore_index=True) #contains all pens
+    joined_pose_3d_df.dropna(inplace=True)
+    pose_arr = joined_pose_3d_df.loc[:,'0':].values
+    return (joined_pose_3d_df, pose_arr)
 
+def getArrayID(pose_df, photo_id):
+    return np.where(np.array(pose_df.index) == photo_id)[0][0]
 
+def getImageID(pose_df, array_id):
+    #Input: pose_df - dataframe with raw pose information - index matches to photo name
+    #Input: array_id - location of pose in array
+    #Returns: photo name/id
+    return np.array(pose_df.index)[array_id]
 
+def cleanPenPredictions(joined_pose_3d_df):
+    to_remove = np.array([0,5,7,9,10,11,15,17,19,23,25,26,27,30,31,36,40,48,52,53,56,57,58,59,62,65,66,
+                 68,69,75,77,79,80,84,86,87,89,92,93,96,97,99,100,101,102,103,108,111,113,116,
+                 119,121,125,126,135,138,140,141,143,145,146,147,152,155,159,165,166,169,173,
+                 177,178,179,186,187,188,190,191,192,194,203,207,211,213,220,221,222,224,227,
+                 235,240,241,242,248,249,257,260,261,262,268,270,271,272,275,276,277,278,279,
+                 281,282,291,294,299,301,305,312,314,317,322,324,331,333,335,336,341,347,349,351,
+                 352,362,368,376,382,387,392,394,395])
+    good_poses_3d_df = joined_pose_3d_df.drop(to_remove)
+    return good_poses_3d_df 
 
-
-
-
-
-
-
-
-
-
+def PenFeatureSpace(clean_poses):
+    #Input: clean_poses - dataset off all of the camera-invariant poses
+    #Returns: dataset of poses in feature space
+    pose_features = np.zeros((len(clean_poses), 5))
+    for i in range(len(clean_poses)):
+        pose_3d = pose_to_matrix(clean_poses[i])
+        feature_array = np.array([torsoAngle(pose_3d), bodyHeight(pose_3d), 
+                                  forwardStep(pose_3d), handHeight(pose_3d),
+                                  bodyAngle(pose_3d)])
+        pose_features[i] = feature_array
+    return pose_features
