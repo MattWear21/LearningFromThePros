@@ -279,18 +279,18 @@ def getTrainTest(df, test_size=0.3):
     train_df = ml_df.drop(test_ind).reset_index(drop=True)
     return train_df, test_df
 
-def getxSInput(df, scaler, angle, dist, up=0, cluster=0, assist_type='Pass'):
+def getxSInput(df, scaler, angle, dist, up=0, cluster=0):
     k = len(df.filter(regex='cluster').columns)
     angle_dist = scaler.transform([[angle,dist]])[0]
     up = np.array([up])
     clust = np.zeros(k)
     clust[cluster] = 1
-    if assist_type == 'Cross':
-        ass_t = np.array([1, 0, 0])
-    elif assist_type == 'Other':
-        ass_t = np.array([0, 1, 0])
-    else:
-        ass_t = np.array([0, 0, 1])
+    #if assist_type == 'Cross':
+    #    ass_t = np.array([1, 0, 0])
+    #elif assist_type == 'Other':
+    #    ass_t = np.array([0, 1, 0])
+    #else:
+    #    ass_t = np.array([0, 0, 1])
     return np.array([np.concatenate((angle_dist,up,clust))])
 
 def getXSMap(train_df, model, scaler, num_clusters, up=0, ass='Pass'):
@@ -449,3 +449,24 @@ def PenFeatureSpace(clean_poses):
                                   bodyAngle(pose_3d)])
         pose_features[i] = feature_array
     return pose_features
+
+def getxSInputNoScaler(df, angle, dist, up=0, cluster=0):
+    k = len(df.filter(regex='cluster').columns)
+    angle_dist = np.array([angle,dist])
+    up = np.array([up])
+    clust = np.zeros(k)
+    clust[cluster] = 1
+    return np.array([np.concatenate((angle_dist,up,clust))])
+
+def getProsOptimalCluster(df, svm, num_clusters=4):
+    optimal_cluster = []
+    for i in range(len(df)):
+        angle = df.loc[i, 'shot_angle']
+        dist = df.loc[i, 'distance_to_goal']
+        up = df.loc[i, 'under_pressure']
+        xs_list = []
+        for cluster in range(num_clusters):
+            inp = getxSInputNoScaler(df, angle=angle, dist=dist, up=up, cluster=cluster)
+            xs_list.append(svm.predict_proba(inp)[0][1])
+        optimal_cluster.append(np.argmax(xs_list))
+    return optimal_cluster
