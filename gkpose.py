@@ -397,13 +397,10 @@ def getOptimalSaveTechnique(amateur_1v1s, amateur_model_df, svm, scaler, num_clu
     return optimal_cluster, mean_xs
 
 def cleanPenDataFrames(pose_3d_df, pose_3d_2_df):
-    #pose_3d_3_df: 17 - 19 data
+    #pose_3d_2_df: 17 - 19 data
     #pose_3d_df: 19 - 21 data
     #Change shots that hit post to 'Off T'
     pose_3d_2_df.loc[pose_3d_2_df.shot_outcome_name == 'Post', 'shot_outcome_name'] = 'Off T'
-    #pose_3d_2_df.drop(columns=['match_id','minute','team_id','team_name','player_id','shot_body_part_name',
-    #                 'shot_technique_name','date','home_team','away_team','season',
-    #                 'competition','gk_id'], inplace=True)
     pose_3d_df.loc[pose_3d_df.off_target == 1, 'outcome'] = 'Off T'
     pose_3d_df.loc[pose_3d_df.outcome == 'Scored', 'outcome'] = 'Goal'
     pose_3d_df.loc[pose_3d_df.outcome == 'Missed', 'outcome'] = 'Saved'
