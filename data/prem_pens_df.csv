@@ -1,184 +1,184 @@
-,match_id,minute,team_id,team_name,player_id,player_name,shot_body_part_name,shot_technique_name,shot_outcome_name,date,home_team,away_team,season,competition,gk_id,gk_name
-0,14518,4,58,Cardiff City,9923,Bobby Reid,Right Foot,Normal,Goal,02/02/2019,Cardiff City,AFC Bournemouth,2018/2019,Premier League,20074,Artur Boruc
-1,2034,73,33,Chelsea,3621,Eden Hazard,Right Foot,Lob,Goal,02/12/2017,Chelsea,Newcastle United,2017/2018,Premier League,3649,Karl Darlow
-2,2126,41,24,Liverpool,3531,Mohamed Salah,Left Foot,Normal,Saved,28/10/2017,Liverpool,Huddersfield Town,2017/2018,Premier League,3322,Jonas Lössl
-3,14298,74,28,AFC Bournemouth,3346,Joshua King,Right Foot,Normal,Goal,25/08/2018,AFC Bournemouth,Everton,2018/2019,Premier League,3468,Jordan Pickford
-4,2331,89,29,Everton,3538,Wayne Mark Rooney,Right Foot,Normal,Goal,15/10/2017,Brighton & Hove Albion,Everton,2017/2018,Premier League,3240,Mathew Ryan
-5,14488,49,24,Liverpool,3531,Mohamed Salah,Left Foot,Normal,Goal,12/01/2019,Brighton & Hove Albion,Liverpool,2018/2019,Premier League,22358,David Button
-6,2223,76,35,Brighton & Hove Albion,3085,Glenn Murray,Right Foot,Normal,Saved,31/03/2018,Brighton & Hove Albion,Leicester City,2017/2018,Premier League,3815,Kasper Schmeichel
-7,14534,64,39,Manchester United,20004,Paul Pogba,Right Foot,Normal,Goal,09/02/2019,Fulham,Manchester United,2018/2019,Premier League,6823,Sergio Rico González
-8,14308,64,25,Southampton,3966,Charlie Austin,Right Foot,Normal,Saved,01/09/2018,Crystal Palace,Southampton,2018/2019,Premier League,3488,Wayne Hennessey
-9,14563,41,40,West Ham United,3874,Mark Noble,Right Foot,Normal,Goal,02/03/2019,West Ham United,Newcastle United,2018/2019,Premier League,3711,Martin Dúbravka
-10,14514,79,37,Newcastle United,3049,Matt Ritchie,Left Foot,Normal,Goal,29/01/2019,Newcastle United,Manchester City,2018/2019,Premier League,3067,Ederson Santana de Moraes
-11,2307,66,1,Arsenal,3451,Alexandre Lacazette,Right Foot,Normal,Goal,25/09/2017,Arsenal,West Bromwich Albion,2017/2018,Premier League,4053,Ben Foster
-12,14410,11,22,Leicester City,10960,Jamie Vardy,Right Foot,Normal,Goal,01/12/2018,Leicester City,Watford,2018/2019,Premier League,4053,Ben Foster
-13,14345,86,28,AFC Bournemouth,3463,Junior Stanislas,Right Foot,Normal,Goal,01/10/2018,AFC Bournemouth,Crystal Palace,2018/2019,Premier League,3488,Wayne Hennessey
-14,14579,80,24,Liverpool,3473,James Philip Milner,Right Foot,Normal,Goal,17/03/2019,Fulham,Liverpool,2018/2019,Premier League,6823,Sergio Rico González
-15,14596,51,32,Huddersfield Town,3281,Aaron Mooy,Right Foot,Normal,Goal,06/04/2019,Huddersfield Town,Leicester City,2018/2019,Premier League,3815,Kasper Schmeichel
-16,14596,83,22,Leicester City,10960,Jamie Vardy,Right Foot,Normal,Goal,06/04/2019,Huddersfield Town,Leicester City,2018/2019,Premier League,4621,Ben Hamer
-17,14312,24,35,Brighton & Hove Albion,3097,Pascal Groß,Right Foot,Normal,Saved,01/09/2018,Brighton & Hove Albion,Fulham,2018/2019,Premier League,12258,Marcus Bettinelli
-18,14312,83,35,Brighton & Hove Albion,3085,Glenn Murray,Right Foot,Normal,Goal,01/09/2018,Brighton & Hove Albion,Fulham,2018/2019,Premier League,12258,Marcus Bettinelli
-19,14304,75,33,Chelsea,3621,Eden Hazard,Right Foot,Normal,Goal,26/08/2018,Newcastle United,Chelsea,2018/2019,Premier League,3711,Martin Dúbravka
-20,2239,88,32,Huddersfield Town,3281,Aaron Mooy,Right Foot,Normal,Goal,16/12/2017,Watford,Huddersfield Town,2017/2018,Premier League,3522,Heurelho da Silva Gomes
-21,14353,32,28,AFC Bournemouth,3346,Joshua King,Right Foot,Normal,Goal,06/10/2018,Watford,AFC Bournemouth,2018/2019,Premier League,4053,Ben Foster
-22,2147,86,38,Tottenham Hotspur,10955,Harry Kane,Right Foot,Normal,Saved,04/02/2018,Liverpool,Tottenham Hotspur,2017/2018,Premier League,3630,Loris Karius
-23,2147,94,38,Tottenham Hotspur,10955,Harry Kane,Right Foot,Normal,Goal,04/02/2018,Liverpool,Tottenham Hotspur,2017/2018,Premier League,3630,Loris Karius
-24,14493,38,36,Manchester City,3202,Gabriel Fernando de Jesus,Right Foot,Normal,Goal,14/01/2019,Manchester City,Wolverhampton Wanderers,2018/2019,Premier League,5205,Rui Pedro dos Santos Patrício
-25,2111,61,22,Leicester City,10960,Jamie Vardy,Right Foot,Normal,Goal,09/09/2017,Leicester City,Chelsea,2017/2018,Premier League,3509,Thibaut Courtois
-26,14313,68,39,Manchester United,20004,Paul Pogba,Right Foot,Normal,Saved,02/09/2018,Burnley,Manchester United,2018/2019,Premier League,3291,Joe Hart
-27,14578,71,29,Everton,3944,Gylfi Þór Sigurðsson,Right Foot,Normal,Saved,17/03/2019,Everton,Chelsea,2018/2019,Premier League,6395,Kepa Arrizabalaga Revuelta
-28,14503,26,39,Manchester United,20004,Paul Pogba,Right Foot,Normal,Goal,19/01/2019,Manchester United,Brighton & Hove Albion,2018/2019,Premier League,22358,David Button
-29,14295,44,24,Liverpool,3473,James Philip Milner,Right Foot,Normal,Goal,20/08/2018,Crystal Palace,Liverpool,2018/2019,Premier League,3488,Wayne Hennessey
-30,2202,75,22,Leicester City,10960,Jamie Vardy,Right Foot,Normal,Goal,09/05/2018,Leicester City,Arsenal,2017/2018,Premier League,3461,Petr Čech
-31,2310,12,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Goal,31/03/2018,Crystal Palace,Liverpool,2017/2018,Premier League,3630,Loris Karius
-32,2255,87,29,Everton,3538,Wayne Mark Rooney,Right Foot,Normal,Saved,10/03/2018,Everton,Brighton & Hove Albion,2017/2018,Premier League,3240,Mathew Ryan
-33,14466,46,24,Liverpool,3531,Mohamed Salah,Left Foot,Normal,Goal,29/12/2018,Liverpool,Arsenal,2018/2019,Premier League,15581,Bernd Leno
-34,14466,64,24,Liverpool,3535,Roberto Firmino Barbosa de Oliveira,Right Foot,Normal,Goal,29/12/2018,Liverpool,Arsenal,2018/2019,Premier League,15581,Bernd Leno
-35,14574,49,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Goal,09/03/2019,Crystal Palace,Brighton & Hove Albion,2018/2019,Premier League,3240,Mathew Ryan
-36,14276,2,39,Manchester United,20004,Paul Pogba,Right Foot,Normal,Goal,10/08/2018,Manchester United,Leicester City,2018/2019,Premier League,3815,Kasper Schmeichel
-37,14558,94,39,Manchester United,20004,Paul Pogba,Right Foot,Normal,Saved,02/03/2019,Manchester United,Southampton,2018/2019,Premier League,22379,Angus Gunn
-38,14372,26,39,Manchester United,20004,Paul Pogba,Right Foot,Normal,Saved,28/10/2018,Manchester United,Everton,2018/2019,Premier League,3468,Jordan Pickford
-39,14372,76,29,Everton,3944,Gylfi Þór Sigurðsson,Right Foot,Normal,Goal,28/10/2018,Manchester United,Everton,2018/2019,Premier League,3333,David de Gea Quintana
-40,2166,62,36,Manchester City,3237,Sergio Leonel Agüero del Castillo,Right Foot,Normal,Goal,20/01/2018,Manchester City,Newcastle United,2017/2018,Premier League,3649,Karl Darlow
-41,14325,64,25,Southampton,3654,Daniel William John Ings,Right Foot,Normal,Goal,17/09/2018,Southampton,Brighton & Hove Albion,2018/2019,Premier League,3240,Mathew Ryan
-42,14325,90,35,Brighton & Hove Albion,3085,Glenn Murray,Right Foot,Normal,Goal,17/09/2018,Southampton,Brighton & Hove Albion,2018/2019,Premier League,3619,Alex McCarthy
-43,14519,45,33,Chelsea,3621,Eden Hazard,Right Foot,Normal,Goal,02/02/2019,Chelsea,Huddersfield Town,2018/2019,Premier League,3322,Jonas Lössl
-44,2356,90,29,Everton,3518,Leighton Baines,Left Foot,Normal,Goal,05/11/2017,Everton,Watford,2017/2018,Premier League,3522,Heurelho da Silva Gomes
-45,2356,100,23,Watford,3683,Tom Cleverley,Right Foot,Normal,Off T,05/11/2017,Everton,Watford,2017/2018,Premier League,3468,Jordan Pickford
-46,2213,42,28,AFC Bournemouth,3346,Joshua King,Right Foot,Normal,Goal,31/03/2018,Watford,AFC Bournemouth,2017/2018,Premier League,3742,Orestis Karnezis
-47,14457,47,24,Liverpool,3531,Mohamed Salah,Left Foot,Normal,Goal,26/12/2018,Liverpool,Newcastle United,2018/2019,Premier League,3711,Martin Dúbravka
-48,14416,23,35,Brighton & Hove Albion,3085,Glenn Murray,Right Foot,Normal,Goal,04/12/2018,Brighton & Hove Albion,Crystal Palace,2018/2019,Premier League,3488,Wayne Hennessey
-49,14416,80,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Goal,04/12/2018,Brighton & Hove Albion,Crystal Palace,2018/2019,Premier League,3240,Mathew Ryan
-50,2340,89,30,Stoke City,3636,Charlie Adam,Left Foot,Normal,Saved,10/02/2018,Stoke City,Brighton & Hove Albion,2017/2018,Premier League,3240,Mathew Ryan
-51,14343,33,38,Tottenham Hotspur,10955,Harry Kane,Right Foot,Normal,Goal,29/09/2018,Huddersfield Town,Tottenham Hotspur,2018/2019,Premier League,3322,Jonas Lössl
-52,2291,94,32,Huddersfield Town,3305,Rajiv van La Parra,Right Foot,Normal,Goal,11/02/2018,Huddersfield Town,AFC Bournemouth,2017/2018,Premier League,3339,Asmir Begović
-53,2012,49,36,Manchester City,3237,Sergio Leonel Agüero del Castillo,Right Foot,Normal,Goal,05/11/2017,Manchester City,Arsenal,2017/2018,Premier League,3461,Petr Čech
-54,14617,80,24,Liverpool,3473,James Philip Milner,Right Foot,Normal,Goal,21/04/2019,Cardiff City,Liverpool,2018/2019,Premier League,9920,Neil Leonard Dula Etheridge
-55,14494,10,25,Southampton,3328,James Ward-Prowse,Right Foot,Normal,Goal,12/01/2019,Leicester City,Southampton,2018/2019,Premier League,3815,Kasper Schmeichel
-56,2287,55,40,West Ham United,3347,André Ayew Pelé,Left Foot,Normal,Saved,23/12/2017,West Ham United,Newcastle United,2017/2018,Premier League,3096,Rob Elliot
-57,14375,45,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Goal,28/10/2018,Crystal Palace,Arsenal,2018/2019,Premier League,15581,Bernd Leno
-58,14375,82,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Goal,28/10/2018,Crystal Palace,Arsenal,2018/2019,Premier League,15581,Bernd Leno
-59,2209,42,40,West Ham United,3874,Mark Noble,Right Foot,Normal,Goal,30/01/2018,West Ham United,Crystal Palace,2017/2018,Premier League,3488,Wayne Hennessey
-60,2337,33,37,Newcastle United,3265,José Luis Sanmartín Mato,Right Foot,Normal,Saved,31/01/2018,Newcastle United,Burnley,2017/2018,Premier League,3474,Nick Pope
-61,2225,74,36,Manchester City,3202,Gabriel Fernando de Jesus,Right Foot,Normal,Post,16/12/2017,Manchester City,Tottenham Hotspur,2017/2018,Premier League,3099,Hugo Lloris
-62,14318,80,33,Chelsea,3621,Eden Hazard,Right Foot,Normal,Goal,15/09/2018,Chelsea,Cardiff City,2018/2019,Premier League,9920,Neil Leonard Dula Etheridge
-63,14532,26,40,West Ham United,3874,Mark Noble,Right Foot,Normal,Goal,09/02/2019,Crystal Palace,West Ham United,2018/2019,Premier League,6625,Vicente Guaita Panadero
-64,14564,73,38,Tottenham Hotspur,10955,Harry Kane,Right Foot,Normal,Goal,02/03/2019,Tottenham Hotspur,Arsenal,2018/2019,Premier League,15581,Bernd Leno
-65,14564,90,1,Arsenal,3712,Pierre-Emerick Aubameyang,Right Foot,Normal,Saved,02/03/2019,Tottenham Hotspur,Arsenal,2018/2019,Premier League,3099,Hugo Lloris
-66,14533,55,36,Manchester City,3237,Sergio Leonel Agüero del Castillo,Right Foot,Normal,Goal,10/02/2019,Manchester City,Chelsea,2018/2019,Premier League,6395,Kepa Arrizabalaga Revuelta
-67,2048,41,23,Watford,3454,Troy Deeney,Right Foot,Normal,Goal,05/02/2018,Watford,Chelsea,2017/2018,Premier League,3509,Thibaut Courtois
-68,1998,6,38,Tottenham Hotspur,10955,Harry Kane,Right Foot,Normal,Goal,23/12/2017,Burnley,Tottenham Hotspur,2017/2018,Premier League,3474,Nick Pope
-69,14509,65,1,Arsenal,3712,Pierre-Emerick Aubameyang,Right Foot,Normal,Goal,29/01/2019,Arsenal,Cardiff City,2018/2019,Premier League,9920,Neil Leonard Dula Etheridge
-70,2176,53,30,Stoke City,3533,Xherdan Shaqiri,Left Foot,Normal,Saved,13/05/2018,Swansea City,Stoke City,2017/2018,Premier League,3262,Łukasz Fabiański
-71,2033,54,24,Liverpool,3535,Roberto Firmino Barbosa de Oliveira,Right Foot,Normal,Goal,12/08/2017,Watford,Liverpool,2017/2018,Premier League,3522,Heurelho da Silva Gomes
-72,14289,32,40,West Ham United,3325,Marko Arnautović,Right Foot,Normal,Goal,18/08/2018,West Ham United,AFC Bournemouth,2018/2019,Premier League,3339,Asmir Begović
-73,14587,75,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Goal,30/03/2019,Crystal Palace,Huddersfield Town,2018/2019,Premier League,4621,Ben Hamer
-74,14641,8,1,Arsenal,3712,Pierre-Emerick Aubameyang,Right Foot,Normal,Goal,05/05/2019,Arsenal,Brighton & Hove Albion,2018/2019,Premier League,3240,Mathew Ryan
-75,14641,60,35,Brighton & Hove Albion,3085,Glenn Murray,Right Foot,Normal,Goal,05/05/2019,Arsenal,Brighton & Hove Albion,2018/2019,Premier League,15581,Bernd Leno
-76,2052,58,31,Crystal Palace,3507,Wilfried Zaha,Right Foot,Normal,Goal,23/12/2017,Swansea City,Crystal Palace,2017/2018,Premier League,3262,Łukasz Fabiański
-77,14342,51,29,Everton,3944,Gylfi Þór Sigurðsson,Right Foot,Normal,Post,29/09/2018,Everton,Fulham,2018/2019,Premier League,12258,Marcus Bettinelli
-78,14293,43,35,Brighton & Hove Albion,3097,Pascal Groß,Right Foot,Normal,Goal,19/08/2018,Brighton & Hove Albion,Manchester United,2018/2019,Premier League,3333,David de Gea Quintana
-79,14293,94,39,Manchester United,20004,Paul Pogba,Right Foot,Normal,Goal,19/08/2018,Brighton & Hove Albion,Manchester United,2018/2019,Premier League,3240,Mathew Ryan
-80,14381,67,46,Wolverhampton Wanderers,9927,Rúben Diogo Da Silva Neves,Right Foot,Normal,Goal,03/11/2018,Wolverhampton Wanderers,Tottenham Hotspur,2018/2019,Premier League,3099,Hugo Lloris
-81,14381,78,46,Wolverhampton Wanderers,5568,Raúl Alonso Jiménez Rodríguez,Right Foot,Normal,Goal,03/11/2018,Wolverhampton Wanderers,Tottenham Hotspur,2018/2019,Premier League,3099,Hugo Lloris
-82,2300,77,24,Liverpool,3531,Mohamed Salah,Left Foot,Normal,Goal,30/01/2018,Huddersfield Town,Liverpool,2017/2018,Premier League,3322,Jonas Lössl
-83,2091,46,29,Everton,3538,Wayne Mark Rooney,Right Foot,Normal,Saved,18/12/2017,Everton,Swansea City,2017/2018,Premier League,3262,Łukasz Fabiański
-84,2091,72,29,Everton,3538,Wayne Mark Rooney,Right Foot,Normal,Goal,18/12/2017,Everton,Swansea City,2017/2018,Premier League,3262,Łukasz Fabiański
-85,2212,52,1,Arsenal,3712,Pierre-Emerick Aubameyang,Right Foot,Normal,Saved,01/03/2018,Arsenal,Manchester City,2017/2018,Premier League,3067,Ederson Santana de Moraes
-86,14316,40,28,AFC Bournemouth,3346,Joshua King,Right Foot,Normal,Goal,15/09/2018,AFC Bournemouth,Leicester City,2018/2019,Premier League,3815,Kasper Schmeichel
-87,14316,87,22,Leicester City,9905,James Maddison,Right Foot,Normal,Goal,15/09/2018,AFC Bournemouth,Leicester City,2018/2019,Premier League,3339,Asmir Begović
-88,2339,67,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Goal,17/03/2018,Huddersfield Town,Crystal Palace,2017/2018,Premier League,3322,Jonas Lössl
-89,14551,58,36,Manchester City,3237,Sergio Leonel Agüero del Castillo,Right Foot,Normal,Goal,27/02/2019,Manchester City,West Ham United,2018/2019,Premier League,3262,Łukasz Fabiański
-90,2246,74,25,Southampton,3949,Manolo Gabbiadini,Left Foot,Normal,Goal,15/10/2017,Southampton,Newcastle United,2017/2018,Premier League,3096,Rob Elliot
-91,14455,29,23,Watford,3454,Troy Deeney,Right Foot,Normal,Goal,22/12/2018,West Ham United,Watford,2018/2019,Premier League,3262,Łukasz Fabiański
-92,14567,68,1,Arsenal,3712,Pierre-Emerick Aubameyang,Right Foot,Normal,Goal,10/03/2019,Arsenal,Manchester United,2018/2019,Premier League,3333,David de Gea Quintana
-93,2231,72,33,Chelsea,3472,Willian Borges da Silva,Right Foot,Normal,Goal,30/12/2017,Chelsea,Stoke City,2017/2018,Premier League,3537,Jack Butland
-94,14530,59,22,Leicester City,10960,Jamie Vardy,Right Foot,Normal,Saved,10/02/2019,Tottenham Hotspur,Leicester City,2018/2019,Premier League,3099,Hugo Lloris
-95,2227,91,39,Manchester United,20039,Anthony Martial,Right Foot,Normal,Goal,17/09/2017,Manchester United,Everton,2017/2018,Premier League,3468,Jordan Pickford
-96,14434,66,55,Fulham,10280,Aboubakar Kamara,Right Foot,Normal,Goal,08/12/2018,Manchester United,Fulham,2018/2019,Premier League,3333,David de Gea Quintana
-97,14571,30,37,Newcastle United,3049,Matt Ritchie,Left Foot,Normal,Saved,09/03/2019,Newcastle United,Everton,2018/2019,Premier League,3468,Jordan Pickford
-98,14336,29,22,Leicester City,10960,Jamie Vardy,Right Foot,Normal,Goal,29/09/2018,Newcastle United,Leicester City,2018/2019,Premier League,3711,Martin Dúbravka
-99,2319,74,1,Arsenal,3712,Pierre-Emerick Aubameyang,Right Foot,Normal,Goal,01/04/2018,Arsenal,Stoke City,2017/2018,Premier League,3537,Jack Butland
-100,2319,88,1,Arsenal,3451,Alexandre Lacazette,Right Foot,Normal,Goal,01/04/2018,Arsenal,Stoke City,2017/2018,Premier League,3537,Jack Butland
-101,2175,63,36,Manchester City,3202,Gabriel Fernando de Jesus,Right Foot,Normal,Saved,22/04/2018,Manchester City,Swansea City,2017/2018,Premier League,3262,Łukasz Fabiański
-102,14419,34,58,Cardiff City,9917,Joe Ralls,Left Foot,Normal,Saved,04/12/2018,West Ham United,Cardiff City,2018/2019,Premier League,3262,Łukasz Fabiański
-103,2158,70,22,Leicester City,10960,Jamie Vardy,Right Foot,Normal,Goal,31/01/2018,Everton,Leicester City,2017/2018,Premier League,3468,Jordan Pickford
-104,2271,18,40,West Ham United,3874,Mark Noble,Right Foot,Normal,Goal,16/12/2017,Stoke City,West Ham United,2017/2018,Premier League,3537,Jack Butland
-105,14462,57,33,Chelsea,3621,Eden Hazard,Right Foot,Normal,Goal,26/12/2018,Watford,Chelsea,2018/2019,Premier League,4053,Ben Foster
-106,14531,73,34,Burnley,3661,Ashley Barnes,Right Foot,Normal,Goal,09/02/2019,Brighton & Hove Albion,Burnley,2018/2019,Premier League,3240,Mathew Ryan
-107,14618,52,55,Fulham,4269,Aleksandar Mitrović,Right Foot,Normal,Goal,20/04/2019,AFC Bournemouth,Fulham,2018/2019,Premier League,20074,Artur Boruc
-108,14287,95,37,Newcastle United,3666,Robert Kenedy Nunes do Nascimento,Left Foot,Normal,Saved,18/08/2018,Cardiff City,Newcastle United,2018/2019,Premier League,9920,Neil Leonard Dula Etheridge
-109,2355,24,36,Manchester City,10287,İlkay Gündoğan,Right Foot,Normal,Goal,14/04/2018,Tottenham Hotspur,Manchester City,2017/2018,Premier League,3099,Hugo Lloris
-110,14511,86,39,Manchester United,20004,Paul Pogba,Right Foot,Normal,Goal,29/01/2019,Manchester United,Burnley,2018/2019,Premier League,4693,Tom Heaton
-111,2247,13,35,Brighton & Hove Albion,3085,Glenn Murray,Right Foot,Normal,Goal,31/01/2018,Southampton,Brighton & Hove Albion,2017/2018,Premier League,3619,Alex McCarthy
-112,2181,17,28,AFC Bournemouth,3463,Junior Stanislas,Right Foot,Normal,Goal,21/10/2017,Stoke City,AFC Bournemouth,2017/2018,Premier League,3537,Jack Butland
-113,14403,78,22,Leicester City,10960,Jamie Vardy,Right Foot,Normal,Goal,24/11/2018,Brighton & Hove Albion,Leicester City,2018/2019,Premier League,3240,Mathew Ryan
-114,2314,49,22,Leicester City,10960,Jamie Vardy,Right Foot,Normal,Goal,16/09/2017,Huddersfield Town,Leicester City,2017/2018,Premier League,3322,Jonas Lössl
-115,14415,9,1,Arsenal,3712,Pierre-Emerick Aubameyang,Right Foot,Normal,Goal,02/12/2018,Arsenal,Tottenham Hotspur,2018/2019,Premier League,3099,Hugo Lloris
-116,14415,33,38,Tottenham Hotspur,10955,Harry Kane,Right Foot,Normal,Goal,02/12/2018,Arsenal,Tottenham Hotspur,2018/2019,Premier League,15581,Bernd Leno
-117,2085,38,22,Leicester City,10960,Jamie Vardy,Right Foot,Normal,Goal,20/01/2018,Leicester City,Watford,2017/2018,Premier League,3742,Orestis Karnezis
-118,2292,74,35,Brighton & Hove Albion,3085,Glenn Murray,Right Foot,Normal,Goal,20/10/2017,West Ham United,Brighton & Hove Albion,2017/2018,Premier League,3291,Joe Hart
-119,2338,91,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Saved,31/12/2017,Crystal Palace,Manchester City,2017/2018,Premier League,3067,Ederson Santana de Moraes
-120,14655,77,40,West Ham United,3874,Mark Noble,Right Foot,Normal,Goal,12/05/2019,Watford,West Ham United,2018/2019,Premier League,4053,Ben Foster
-121,2011,17,29,Everton,3538,Wayne Mark Rooney,Right Foot,Normal,Saved,29/11/2017,Everton,West Ham United,2017/2018,Premier League,3291,Joe Hart
-122,2011,58,40,West Ham United,3595,Manuel Lanzini,Right Foot,Normal,Saved,29/11/2017,Everton,West Ham United,2017/2018,Premier League,3468,Jordan Pickford
-123,2103,62,26,Swansea City,3450,Jordan Ayew,Right Foot,Normal,Goal,03/03/2018,Swansea City,West Ham United,2017/2018,Premier League,3623,Adrián San Miguel del Castillo
-124,14478,94,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Goal,02/01/2019,Wolverhampton Wanderers,Crystal Palace,2018/2019,Premier League,5205,Rui Pedro dos Santos Patrício
-125,2050,67,39,Manchester United,3385,Alexis Alejandro Sánchez Sánchez,Right Foot,Normal,Saved,03/02/2018,Manchester United,Huddersfield Town,2017/2018,Premier League,3322,Jonas Lössl
-126,2284,34,28,AFC Bournemouth,3346,Joshua King,Right Foot,Normal,Goal,03/03/2018,Leicester City,AFC Bournemouth,2017/2018,Premier League,3815,Kasper Schmeichel
-127,14356,59,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Saved,21/10/2018,Everton,Crystal Palace,2018/2019,Premier League,3468,Jordan Pickford
-128,14585,47,28,AFC Bournemouth,3346,Joshua King,Right Foot,Normal,Goal,16/03/2019,AFC Bournemouth,Newcastle United,2018/2019,Premier League,3711,Martin Dúbravka
-129,2237,66,33,Chelsea,3621,Eden Hazard,Right Foot,Normal,Goal,03/01/2018,Arsenal,Chelsea,2017/2018,Premier League,3461,Petr Čech
-130,14473,81,55,Fulham,10280,Aboubakar Kamara,Right Foot,Normal,Saved,29/12/2018,Fulham,Huddersfield Town,2018/2019,Premier League,3322,Jonas Lössl
-131,2221,76,29,Everton,3538,Wayne Mark Rooney,Right Foot,Normal,Goal,10/12/2017,Liverpool,Everton,2017/2018,Premier League,3539,Simon Mignolet
-132,2108,40,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Goal,09/12/2017,Crystal Palace,AFC Bournemouth,2017/2018,Premier League,3339,Asmir Begović
-133,2108,92,31,Crystal Palace,3380,Christian Benteke Liolo,Right Foot,Normal,Saved,09/12/2017,Crystal Palace,AFC Bournemouth,2017/2018,Premier League,3339,Asmir Begović
-134,14520,24,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Goal,02/02/2019,Crystal Palace,Fulham,2018/2019,Premier League,6823,Sergio Rico González
-135,2333,89,31,Crystal Palace,3380,Christian Benteke Liolo,Right Foot,Normal,Goal,28/04/2018,Crystal Palace,Leicester City,2017/2018,Premier League,4621,Ben Hamer
-136,14432,67,29,Everton,3944,Gylfi Þór Sigurðsson,Right Foot,Normal,Saved,10/12/2018,Everton,Watford,2018/2019,Premier League,4053,Ben Foster
-137,14449,37,58,Cardiff City,11290,Callum Paterson,Right Foot,Normal,Goal,22/12/2018,Cardiff City,Manchester United,2018/2019,Premier League,3333,David de Gea Quintana
-138,14449,56,39,Manchester United,3293,Jesse Lingard,Right Foot,Normal,Goal,22/12/2018,Cardiff City,Manchester United,2018/2019,Premier League,9920,Neil Leonard Dula Etheridge
-139,2036,54,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Goal,04/02/2018,Crystal Palace,Newcastle United,2017/2018,Premier League,3649,Karl Darlow
-140,2020,88,27,West Bromwich Albion,3685,Jay Rodriguez,Right Foot,Normal,Goal,31/12/2017,West Bromwich Albion,Arsenal,2017/2018,Premier League,3461,Petr Čech
-141,14326,41,38,Tottenham Hotspur,10955,Harry Kane,Right Foot,Normal,Goal,22/09/2018,Brighton & Hove Albion,Tottenham Hotspur,2018/2019,Premier League,3240,Mathew Ryan
-142,2077,76,23,Watford,3454,Troy Deeney,Right Foot,Normal,Goal,28/11/2017,Watford,Manchester United,2017/2018,Premier League,3333,David de Gea Quintana
-143,14613,18,39,Manchester United,20004,Paul Pogba,Right Foot,Normal,Goal,13/04/2019,Manchester United,West Ham United,2018/2019,Premier League,3262,Łukasz Fabiański
-144,14613,79,39,Manchester United,20004,Paul Pogba,Right Foot,Normal,Goal,13/04/2019,Manchester United,West Ham United,2018/2019,Premier League,3262,Łukasz Fabiański
-145,7306,49,35,Brighton & Hove Albion,3097,Pascal Groß,Right Foot,Normal,Goal,17/04/2018,Brighton & Hove Albion,Tottenham Hotspur,2017/2018,Premier League,3099,Hugo Lloris
-146,2041,88,36,Manchester City,3233,Raheem Shaquille Sterling,Right Foot,Normal,Goal,16/09/2017,Watford,Manchester City,2017/2018,Premier League,3522,Heurelho da Silva Gomes
-147,14652,22,58,Cardiff City,9921,Nathaniel Mendez-Laing,Right Foot,Normal,Goal,12/05/2019,Manchester United,Cardiff City,2018/2019,Premier League,3333,David de Gea Quintana
-148,14347,85,36,Manchester City,3814,Riyad Mahrez,Left Foot,Normal,Off T,07/10/2018,Liverpool,Manchester City,2018/2019,Premier League,5547,Alisson Ramsés Becker
-149,2128,37,25,Southampton,3831,Dušan Tadić,Left Foot,Normal,Goal,19/08/2017,Southampton,West Ham United,2017/2018,Premier League,3291,Joe Hart
-150,2128,92,25,Southampton,3966,Charlie Austin,Right Foot,Normal,Goal,19/08/2017,Southampton,West Ham United,2017/2018,Premier League,3291,Joe Hart
-151,2344,29,36,Manchester City,3237,Sergio Leonel Agüero del Castillo,Right Foot,Normal,Goal,21/10/2017,Manchester City,Burnley,2017/2018,Premier League,3474,Nick Pope
-152,14541,13,28,AFC Bournemouth,3346,Joshua King,Right Foot,Normal,Goal,23/02/2019,AFC Bournemouth,Wolverhampton Wanderers,2018/2019,Premier League,5205,Rui Pedro dos Santos Patrício
-153,14541,82,46,Wolverhampton Wanderers,5568,Raúl Alonso Jiménez Rodríguez,Right Foot,Normal,Goal,23/02/2019,AFC Bournemouth,Wolverhampton Wanderers,2018/2019,Premier League,20074,Artur Boruc
-154,14541,84,28,AFC Bournemouth,3346,Joshua King,Right Foot,Normal,Post,23/02/2019,AFC Bournemouth,Wolverhampton Wanderers,2018/2019,Premier League,5205,Rui Pedro dos Santos Patrício
-155,2240,35,35,Brighton & Hove Albion,3085,Glenn Murray,Right Foot,Normal,Off T,16/12/2017,Brighton & Hove Albion,Burnley,2017/2018,Premier League,3474,Nick Pope
-156,2305,52,39,Manchester United,3289,Romelu Lukaku Menama,Left Foot,Normal,Saved,26/08/2017,Manchester United,Leicester City,2017/2018,Premier League,3815,Kasper Schmeichel
-157,14453,51,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Goal,22/12/2018,Manchester City,Crystal Palace,2018/2019,Premier League,3067,Ederson Santana de Moraes
-158,14281,33,28,AFC Bournemouth,3616,Callum Wilson,Right Foot,Normal,Saved,11/08/2018,AFC Bournemouth,Cardiff City,2018/2019,Premier League,9920,Neil Leonard Dula Etheridge
-159,1986,70,23,Watford,3454,Troy Deeney,Right Foot,Normal,Goal,14/10/2017,Watford,Arsenal,2017/2018,Premier League,3461,Petr Čech
-160,14517,93,34,Burnley,3661,Ashley Barnes,Right Foot,Normal,Goal,02/02/2019,Burnley,Southampton,2018/2019,Premier League,3619,Alex McCarthy
-161,14452,41,25,Southampton,3654,Daniel William John Ings,Right Foot,Normal,Goal,22/12/2018,Huddersfield Town,Southampton,2018/2019,Premier League,3322,Jonas Lössl
-162,14540,80,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Goal,23/02/2019,Leicester City,Crystal Palace,2018/2019,Premier League,3815,Kasper Schmeichel
-163,2168,72,22,Leicester City,10960,Jamie Vardy,Right Foot,Normal,Saved,23/09/2017,Leicester City,Liverpool,2017/2018,Premier League,3539,Simon Mignolet
-164,14385,29,25,Southampton,3654,Daniel William John Ings,Right Foot,Normal,Goal,04/11/2018,Manchester City,Southampton,2018/2019,Premier League,3067,Ederson Santana de Moraes
-165,14278,44,33,Chelsea,7024,Jorge Luiz Frello Filho,Right Foot,Normal,Goal,11/08/2018,Huddersfield Town,Chelsea,2018/2019,Premier League,4621,Ben Hamer
-166,1990,50,35,Brighton & Hove Albion,3085,Glenn Murray,Right Foot,Normal,Goal,02/12/2017,Brighton & Hove Albion,Liverpool,2017/2018,Premier League,3539,Simon Mignolet
-167,2083,61,23,Watford,3454,Troy Deeney,Right Foot,Normal,Saved,11/03/2018,Arsenal,Watford,2017/2018,Premier League,3461,Petr Čech
-168,2294,17,35,Brighton & Hove Albion,3085,Glenn Murray,Right Foot,Normal,Goal,24/02/2018,Brighton & Hove Albion,Swansea City,2017/2018,Premier League,3262,Łukasz Fabiański
-169,14604,80,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Goal,06/04/2019,Newcastle United,Crystal Palace,2018/2019,Premier League,3711,Martin Dúbravka
-170,2282,38,23,Watford,3454,Troy Deeney,Right Foot,Normal,Saved,05/05/2018,Watford,Newcastle United,2017/2018,Premier League,3711,Martin Dúbravka
-171,14583,14,40,West Ham United,3874,Mark Noble,Right Foot,Normal,Goal,16/03/2019,West Ham United,Huddersfield Town,2018/2019,Premier League,3322,Jonas Lössl
-172,2144,42,30,Stoke City,4630,Saido Berahino,Right Foot,Normal,Saved,30/09/2017,Stoke City,Southampton,2017/2018,Premier League,3970,Fraser Forster
-173,2076,49,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Goal,28/10/2017,Crystal Palace,West Ham United,2017/2018,Premier League,3291,Joe Hart
-174,2133,91,1,Arsenal,3385,Alexis Alejandro Sánchez Sánchez,Right Foot,Normal,Goal,26/11/2017,Burnley,Arsenal,2017/2018,Premier League,3474,Nick Pope
-175,14370,13,28,AFC Bournemouth,3616,Callum Wilson,Right Foot,Normal,Goal,27/10/2018,Fulham,AFC Bournemouth,2018/2019,Premier League,6823,Sergio Rico González
-176,14389,57,39,Manchester United,20039,Anthony Martial,Right Foot,Normal,Goal,11/11/2018,Manchester City,Manchester United,2018/2019,Premier League,3067,Ederson Santana de Moraes
-177,2349,5,29,Everton,3518,Leighton Baines,Left Foot,Normal,Goal,18/11/2017,Crystal Palace,Everton,2017/2018,Premier League,3487,Julián Speroni
-178,2109,46,36,Manchester City,3237,Sergio Leonel Agüero del Castillo,Right Foot,Normal,Goal,26/11/2017,Huddersfield Town,Manchester City,2017/2018,Premier League,3322,Jonas Lössl
-179,14464,21,29,Everton,3944,Gylfi Þór Sigurðsson,Right Foot,Normal,Goal,26/12/2018,Burnley,Everton,2018/2019,Premier League,3291,Joe Hart
-180,14521,6,46,Wolverhampton Wanderers,9927,Rúben Diogo Da Silva Neves,Right Foot,Normal,Goal,02/02/2019,Everton,Wolverhampton Wanderers,2018/2019,Premier League,3468,Jordan Pickford
-181,14472,74,22,Leicester City,9905,James Maddison,Right Foot,Normal,Saved,29/12/2018,Leicester City,Cardiff City,2018/2019,Premier League,9920,Neil Leonard Dula Etheridge
-182,2236,82,31,Crystal Palace,3455,Luka Milivojević,Right Foot,Normal,Goal,10/02/2018,Everton,Crystal Palace,2017/2018,Premier League,3468,Jordan Pickford
+,player_name,shot_outcome_name,gk_name,,,,,,,
+0,Bobby Reid,Goal,Artur Boruc,,,,,,,
+1,Eden Hazard,Goal,Karl Darlow,,,,,,,
+2,Mohamed Salah,Saved,Jonas Lössl,,,,,,,
+3,Joshua King,Goal,Jordan Pickford,,,,,,,
+4,Wayne Mark Rooney,Goal,Mathew Ryan,,,,,,,
+5,Mohamed Salah,Goal,David Button,,,,,,,
+6,Glenn Murray,Saved,Kasper Schmeichel,,,,,,,
+7,Paul Pogba,Goal,Sergio Rico González,,,,,,,
+8,Charlie Austin,Saved,Wayne Hennessey,,,,,,,
+9,Mark Noble,Goal,Martin Dúbravka,,,,,,,
+10,Matt Ritchie,Goal,Ederson Santana de Moraes,,,,,,,
+11,Alexandre Lacazette,Goal,Ben Foster,,,,,,,
+12,Jamie Vardy,Goal,Ben Foster,,,,,,,
+13,Junior Stanislas,Goal,Wayne Hennessey,,,,,,,
+14,James Philip Milner,Goal,Sergio Rico González,,,,,,,
+15,Aaron Mooy,Goal,Kasper Schmeichel,,,,,,,
+16,Jamie Vardy,Goal,Ben Hamer,,,,,,,
+17,Pascal Groß,Saved,Marcus Bettinelli,,,,,,,
+18,Glenn Murray,Goal,Marcus Bettinelli,,,,,,,
+19,Eden Hazard,Goal,Martin Dúbravka,,,,,,,
+20,Aaron Mooy,Goal,Heurelho da Silva Gomes,,,,,,,
+21,Joshua King,Goal,Ben Foster,,,,,,,
+22,Harry Kane,Saved,Loris Karius,,,,,,,
+23,Harry Kane,Goal,Loris Karius,,,,,,,
+24,Gabriel Fernando de Jesus,Goal,Rui Pedro dos Santos Patrício,,,,,,,
+25,Jamie Vardy,Goal,Thibaut Courtois,,,,,,,
+26,Paul Pogba,Saved,Joe Hart,,,,,,,
+27,Gylfi Þór Sigurðsson,Saved,Kepa Arrizabalaga Revuelta,,,,,,,
+28,Paul Pogba,Goal,David Button,,,,,,,
+29,James Philip Milner,Goal,Wayne Hennessey,,,,,,,
+30,Jamie Vardy,Goal,Petr Čech,,,,,,,
+31,Luka Milivojević,Goal,Loris Karius,,,,,,,
+32,Wayne Mark Rooney,Saved,Mathew Ryan,,,,,,,
+33,Mohamed Salah,Goal,Bernd Leno,,,,,,,
+34,Roberto Firmino Barbosa de Oliveira,Goal,Bernd Leno,,,,,,,
+35,Luka Milivojević,Goal,Mathew Ryan,,,,,,,
+36,Paul Pogba,Goal,Kasper Schmeichel,,,,,,,
+37,Paul Pogba,Saved,Angus Gunn,,,,,,,
+38,Paul Pogba,Saved,Jordan Pickford,,,,,,,
+39,Gylfi Þór Sigurðsson,Goal,David de Gea Quintana,,,,,,,
+40,Sergio Leonel Agüero del Castillo,Goal,Karl Darlow,,,,,,,
+41,Daniel William John Ings,Goal,Mathew Ryan,,,,,,,
+42,Glenn Murray,Goal,Alex McCarthy,,,,,,,
+43,Eden Hazard,Goal,Jonas Lössl,,,,,,,
+44,Leighton Baines,Goal,Heurelho da Silva Gomes,,,,,,,
+45,Tom Cleverley,Off T,Jordan Pickford,,,,,,,
+46,Joshua King,Goal,Orestis Karnezis,,,,,,,
+47,Mohamed Salah,Goal,Martin Dúbravka,,,,,,,
+48,Glenn Murray,Goal,Wayne Hennessey,,,,,,,
+49,Luka Milivojević,Goal,Mathew Ryan,,,,,,,
+50,Charlie Adam,Saved,Mathew Ryan,,,,,,,
+51,Harry Kane,Goal,Jonas Lössl,,,,,,,
+52,Rajiv van La Parra,Goal,Asmir Begović,,,,,,,
+53,Sergio Leonel Agüero del Castillo,Goal,Petr Čech,,,,,,,
+54,James Philip Milner,Goal,Neil Leonard Dula Etheridge,,,,,,,
+55,James Ward-Prowse,Goal,Kasper Schmeichel,,,,,,,
+56,André Ayew Pelé,Saved,Rob Elliot,,,,,,,
+57,Luka Milivojević,Goal,Bernd Leno,,,,,,,
+58,Luka Milivojević,Goal,Bernd Leno,,,,,,,
+59,Mark Noble,Goal,Wayne Hennessey,,,,,,,
+60,José Luis Sanmartín Mato,Saved,Nick Pope,,,,,,,
+61,Gabriel Fernando de Jesus,Post,Hugo Lloris,,,,,,,
+62,Eden Hazard,Goal,Neil Leonard Dula Etheridge,,,,,,,
+63,Mark Noble,Goal,Vicente Guaita Panadero,,,,,,,
+64,Harry Kane,Goal,Bernd Leno,,,,,,,
+65,Pierre-Emerick Aubameyang,Saved,Hugo Lloris,,,,,,,
+66,Sergio Leonel Agüero del Castillo,Goal,Kepa Arrizabalaga Revuelta,,,,,,,
+67,Troy Deeney,Goal,Thibaut Courtois,,,,,,,
+68,Harry Kane,Goal,Nick Pope,,,,,,,
+69,Pierre-Emerick Aubameyang,Goal,Neil Leonard Dula Etheridge,,,,,,,
+70,Xherdan Shaqiri,Saved,Łukasz Fabiański,,,,,,,
+71,Roberto Firmino Barbosa de Oliveira,Goal,Heurelho da Silva Gomes,,,,,,,
+72,Marko Arnautović,Goal,Asmir Begović,,,,,,,
+73,Luka Milivojević,Goal,Ben Hamer,,,,,,,
+74,Pierre-Emerick Aubameyang,Goal,Mathew Ryan,,,,,,,
+75,Glenn Murray,Goal,Bernd Leno,,,,,,,
+76,Wilfried Zaha,Goal,Łukasz Fabiański,,,,,,,
+77,Gylfi Þór Sigurðsson,Post,Marcus Bettinelli,,,,,,,
+78,Pascal Groß,Goal,David de Gea Quintana,,,,,,,
+79,Paul Pogba,Goal,Mathew Ryan,,,,,,,
+80,Rúben Diogo Da Silva Neves,Goal,Hugo Lloris,,,,,,,
+81,Raúl Alonso Jiménez Rodríguez,Goal,Hugo Lloris,,,,,,,
+82,Mohamed Salah,Goal,Jonas Lössl,,,,,,,
+83,Wayne Mark Rooney,Saved,Łukasz Fabiański,,,,,,,
+84,Wayne Mark Rooney,Goal,Łukasz Fabiański,,,,,,,
+85,Pierre-Emerick Aubameyang,Saved,Ederson Santana de Moraes,,,,,,,
+86,Joshua King,Goal,Kasper Schmeichel,,,,,,,
+87,James Maddison,Goal,Asmir Begović,,,,,,,
+88,Luka Milivojević,Goal,Jonas Lössl,,,,,,,
+89,Sergio Leonel Agüero del Castillo,Goal,Łukasz Fabiański,,,,,,,
+90,Manolo Gabbiadini,Goal,Rob Elliot,,,,,,,
+91,Troy Deeney,Goal,Łukasz Fabiański,,,,,,,
+92,Pierre-Emerick Aubameyang,Goal,David de Gea Quintana,,,,,,,
+93,Willian Borges da Silva,Goal,Jack Butland,,,,,,,
+94,Jamie Vardy,Saved,Hugo Lloris,,,,,,,
+95,Anthony Martial,Goal,Jordan Pickford,,,,,,,
+96,Aboubakar Kamara,Goal,David de Gea Quintana,,,,,,,
+97,Matt Ritchie,Saved,Jordan Pickford,,,,,,,
+98,Jamie Vardy,Goal,Martin Dúbravka,,,,,,,
+99,Pierre-Emerick Aubameyang,Goal,Jack Butland,,,,,,,
+100,Alexandre Lacazette,Goal,Jack Butland,,,,,,,
+101,Gabriel Fernando de Jesus,Saved,Łukasz Fabiański,,,,,,,
+102,Joe Ralls,Saved,Łukasz Fabiański,,,,,,,
+103,Jamie Vardy,Goal,Jordan Pickford,,,,,,,
+104,Mark Noble,Goal,Jack Butland,,,,,,,
+105,Eden Hazard,Goal,Ben Foster,,,,,,,
+106,Ashley Barnes,Goal,Mathew Ryan,,,,,,,
+107,Aleksandar Mitrović,Goal,Artur Boruc,,,,,,,
+108,Robert Kenedy Nunes do Nascimento,Saved,Neil Leonard Dula Etheridge,,,,,,,
+109,İlkay Gündoğan,Goal,Hugo Lloris,,,,,,,
+110,Paul Pogba,Goal,Tom Heaton,,,,,,,
+111,Glenn Murray,Goal,Alex McCarthy,,,,,,,
+112,Junior Stanislas,Goal,Jack Butland,,,,,,,
+113,Jamie Vardy,Goal,Mathew Ryan,,,,,,,
+114,Jamie Vardy,Goal,Jonas Lössl,,,,,,,
+115,Pierre-Emerick Aubameyang,Goal,Hugo Lloris,,,,,,,
+116,Harry Kane,Goal,Bernd Leno,,,,,,,
+117,Jamie Vardy,Goal,Orestis Karnezis,,,,,,,
+118,Glenn Murray,Goal,Joe Hart,,,,,,,
+119,Luka Milivojević,Saved,Ederson Santana de Moraes,,,,,,,
+120,Mark Noble,Goal,Ben Foster,,,,,,,
+121,Wayne Mark Rooney,Saved,Joe Hart,,,,,,,
+122,Manuel Lanzini,Saved,Jordan Pickford,,,,,,,
+123,Jordan Ayew,Goal,Adrián San Miguel del Castillo,,,,,,,
+124,Luka Milivojević,Goal,Rui Pedro dos Santos Patrício,,,,,,,
+125,Alexis Alejandro Sánchez Sánchez,Saved,Jonas Lössl,,,,,,,
+126,Joshua King,Goal,Kasper Schmeichel,,,,,,,
+127,Luka Milivojević,Saved,Jordan Pickford,,,,,,,
+128,Joshua King,Goal,Martin Dúbravka,,,,,,,
+129,Eden Hazard,Goal,Petr Čech,,,,,,,
+130,Aboubakar Kamara,Saved,Jonas Lössl,,,,,,,
+131,Wayne Mark Rooney,Goal,Simon Mignolet,,,,,,,
+132,Luka Milivojević,Goal,Asmir Begović,,,,,,,
+133,Christian Benteke Liolo,Saved,Asmir Begović,,,,,,,
+134,Luka Milivojević,Goal,Sergio Rico González,,,,,,,
+135,Christian Benteke Liolo,Goal,Ben Hamer,,,,,,,
+136,Gylfi Þór Sigurðsson,Saved,Ben Foster,,,,,,,
+137,Callum Paterson,Goal,David de Gea Quintana,,,,,,,
+138,Jesse Lingard,Goal,Neil Leonard Dula Etheridge,,,,,,,
+139,Luka Milivojević,Goal,Karl Darlow,,,,,,,
+140,Jay Rodriguez,Goal,Petr Čech,,,,,,,
+141,Harry Kane,Goal,Mathew Ryan,,,,,,,
+142,Troy Deeney,Goal,David de Gea Quintana,,,,,,,
+143,Paul Pogba,Goal,Łukasz Fabiański,,,,,,,
+144,Paul Pogba,Goal,Łukasz Fabiański,,,,,,,
+145,Pascal Groß,Goal,Hugo Lloris,,,,,,,
+146,Raheem Shaquille Sterling,Goal,Heurelho da Silva Gomes,,,,,,,
+147,Nathaniel Mendez-Laing,Goal,David de Gea Quintana,,,,,,,
+148,Riyad Mahrez,Off T,Alisson Ramsés Becker,,,,,,,
+149,Dušan Tadić,Goal,Joe Hart,,,,,,,
+150,Charlie Austin,Goal,Joe Hart,,,,,,,
+151,Sergio Leonel Agüero del Castillo,Goal,Nick Pope,,,,,,,
+152,Joshua King,Goal,Rui Pedro dos Santos Patrício,,,,,,,
+153,Raúl Alonso Jiménez Rodríguez,Goal,Artur Boruc,,,,,,,
+154,Joshua King,Post,Rui Pedro dos Santos Patrício,,,,,,,
+155,Glenn Murray,Off T,Nick Pope,,,,,,,
+156,Romelu Lukaku Menama,Saved,Kasper Schmeichel,,,,,,,
+157,Luka Milivojević,Goal,Ederson Santana de Moraes,,,,,,,
+158,Callum Wilson,Saved,Neil Leonard Dula Etheridge,,,,,,,
+159,Troy Deeney,Goal,Petr Čech,,,,,,,
+160,Ashley Barnes,Goal,Alex McCarthy,,,,,,,
+161,Daniel William John Ings,Goal,Jonas Lössl,,,,,,,
+162,Luka Milivojević,Goal,Kasper Schmeichel,,,,,,,
+163,Jamie Vardy,Saved,Simon Mignolet,,,,,,,
+164,Daniel William John Ings,Goal,Ederson Santana de Moraes,,,,,,,
+165,Jorge Luiz Frello Filho,Goal,Ben Hamer,,,,,,,
+166,Glenn Murray,Goal,Simon Mignolet,,,,,,,
+167,Troy Deeney,Saved,Petr Čech,,,,,,,
+168,Glenn Murray,Goal,Łukasz Fabiański,,,,,,,
+169,Luka Milivojević,Goal,Martin Dúbravka,,,,,,,
+170,Troy Deeney,Saved,Martin Dúbravka,,,,,,,
+171,Mark Noble,Goal,Jonas Lössl,,,,,,,
+172,Saido Berahino,Saved,Fraser Forster,,,,,,,
+173,Luka Milivojević,Goal,Joe Hart,,,,,,,
+174,Alexis Alejandro Sánchez Sánchez,Goal,Nick Pope,,,,,,,
+175,Callum Wilson,Goal,Sergio Rico González,,,,,,,
+176,Anthony Martial,Goal,Ederson Santana de Moraes,,,,,,,
+177,Leighton Baines,Goal,Julián Speroni,,,,,,,
+178,Sergio Leonel Agüero del Castillo,Goal,Jonas Lössl,,,,,,,
+179,Gylfi Þór Sigurðsson,Goal,Joe Hart,,,,,,,
+180,Rúben Diogo Da Silva Neves,Goal,Jordan Pickford,,,,,,,
+181,James Maddison,Saved,Neil Leonard Dula Etheridge,,,,,,,
+182,Luka Milivojević,Goal,Jordan Pickford,,,,,,,
