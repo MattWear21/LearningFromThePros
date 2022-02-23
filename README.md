@@ -2,6 +2,8 @@
 
 This is the repository containing the code submitted to the open source competition at the MIT Sloan Sports Analytics Conference. Our paper seeks to directly learn goalkeeper save technique from broadcast footage and basic x/y location data. 3D body pose data is extracted using a pre-trained convolutional neural network. We then apply unsupervised learning techniques to extract professional goalkeeper technique. A 1v1 expected saves model is then trained which predicts the probability of a save being made conditional on the save technique employed by the goalkeeper. From this, we can derive optimal technique maps and provide methods for amateur goalkeepers to compare their technique to that of the professionals.
 
+We would really appreciate it if you voted for our paper via the link: https://docs.google.com/forms/d/e/1FAIpQLSc99T9vtNvZLSw-j4YPEz2S_jG_Fspx19WUFfuxX4MRLFeykw/viewform?usp=sf_link 
+
 ![3D Pose Esimation](poseEstimationExample.png)
 ![Optimal Technique Map](optimal_technique.png)
 
